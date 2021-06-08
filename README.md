@@ -1,8 +1,8 @@
-# DIGITAL-CLOCK-ON-FPGA
+# DIGITAL-CLOCK-USING-FPGA
 
-Tool Used : Xilinx ISE , Spartan 6A
+  Tool Used : Xilinx ISE , Spartan 6A
   
-  Abstract
+### Abstract
   
 In recent era of digital world, most peoples in the whole world use an automated digital clock in their everyday
 use. Starting from the hand watch we were to those huge street clocks every one of us are
@@ -13,29 +13,35 @@ rest, those we can set the time to start any minute or second we want and also s
 reminder so that the system will store the value in a memory and then when the time reaches
 the alarm will be on. We are targetting to make the same Digital clock using FPGA in order to understand the working of FPGA.
 
-Objective
+
+### Objective
 Our proposed system will be synthesized in FPGA using VHDL code to make the synchronous counter that counts
 the hour, minute and second and also uses four external inputs for hour and minutes and one more external input to reset the clock.
 
-Significance
+
+### Significance
 
 Digital clocks are being a very useful components of our lives. Regarding this change the need of
 accurate and simple materials also dramatically increasing. Our proposed project uses a FPGA to build an accurate synchronous digital clock that is expected to satisfy the need of those materials
 
-Future Scope
+
+### Future Scope
 
 In future we can extend its range till the far possible reach having a negligible delay, a setting
 buttons and a second display.
 
-Circuit Diagram
+
+### Circuit Diagram
 
 Circuit Diagram will be cosisting of total five push buttons at the input of FPGA four push buttons which wil be used for setting hour and minute bits will be configured as pull up resistors and the button which will used for reset input we be connected in pull down configuration.
 
 
-VHDL Coding
+
+### VHDL Coding
 
 
-Clock Divider Subsystem
+
+### "Clock Divider Subsystem"
 
         library IEEE;
         use IEEE.STD_LOGIC_1164.ALL;
@@ -70,7 +76,8 @@ Clock Divider Subsystem
           end Behavioral;
        
        
-  Binary to Seven segment Display Converter Subsystem    
+  
+### "Binary to Seven segment Display Converter Subsystem"    
        
         library IEEE;
         use IEEE.STD_LOGIC_1164.ALL;
@@ -105,7 +112,8 @@ Clock Divider Subsystem
            end process;
          end Behavioral;
 
-Digital Clock system
+
+### "Digital Clock system"
 
         library IEEE;
         use IEEE.STD_LOGIC_1164.ALL;
@@ -252,7 +260,8 @@ Digital Clock system
         end Behavioral;
         
  
- Testbench for Digital Clock
+ 
+### "Testbench for Digital Clock"
  
           LIBRARY ieee;
           USE ieee.std_logic_1164.ALL;
@@ -342,7 +351,8 @@ Digital Clock system
           END;
 
 
-Results          
+
+### Results          
 ![image](https://user-images.githubusercontent.com/82579490/121116470-3c45e400-c834-11eb-9774-d7d0ec6caf8b.png)
 
 FIG1:- Simulation results of Digital clock
